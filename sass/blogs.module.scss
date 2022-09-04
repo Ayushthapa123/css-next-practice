@@ -1,0 +1,64 @@
+@use './global' as c;
+
+.stories {
+    width:100%;
+    height:auto;
+    box-sizing: border-box;
+    padding: 70px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%; 
+
+
+}
+
+
+.ourstories {
+    width:100%;
+    height:400px;
+    background-color: rgb(53, 31, 31);
+    color:white;
+    background-image: url('/blogbackground.jpg');
+    background-size: cover;
+    h2 {
+        text-align: center;
+        line-height: 700px;
+        font-family: c.$boldfont;
+        font-weight: 100;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+    .stories {
+        grid-template-columns: 50% 50%;
+    }
+   
+}
+
+@media (max-width:700px) {
+    .stories {
+        padding:2px;
+        grid-template-columns: 100%;
+    }
+
+   
+
+    .ourstories {
+        height:150px;
+        h2 {
+            line-height: 150px;
+        }
+    }
+}
